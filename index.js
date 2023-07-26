@@ -10,6 +10,9 @@ app.get('/',(req,res)=>{
 app.get('/greet',(req,res)=>{
    res.send('Welcome to my wesbite, I made this website to learn deployment and for no any other purpose')
 })
+app.get('/sank',(req,res)=>{
+   res.send('SaNk is here!!!')
+})
 
 
 
