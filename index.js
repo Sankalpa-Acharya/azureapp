@@ -3,8 +3,8 @@ const app = express()
 const geoip = require('geoip-lite');
 const port = process.env.PORT || 3000
 app.get('/',(req,res)=>{
+    
     const geo = geoip.lookup(req.ip);
-    console.log(req.ip)
     res.status(200).json(geo)
 })
 
